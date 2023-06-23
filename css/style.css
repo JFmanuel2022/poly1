@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body {
+ background: white;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.cabecario {
+    display: flex;
+    justify-content: center; 
+    align-items:center;
+    height: 10vh;
+        
+}
+
+.topo {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background: #FFE4A7;
+    border-radius: 10px;
+    flex-basis: 710em;
+    }
+
+.foto{
+    border-radius: 50%;
+    border:1px solid #C38154;
+}
+.logo {
+    line-height: 25px;
+    color: #525FE1;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+.navegacao {
+    flex:1;
+    justify-content: center; 
+    align-items:center;
+    height: 10vh;
+
+}
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    gap:5px;
+}
+
+  ul li {
+        display:inline-flex;
+        gap: 10px;
+    }
+
+    ul li a{
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: lighter;
+        color:#F24C3D;
+        background-color: aqua;
+        border-radius: 10px;
+        padding: 5px;
+        
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+        gap: 2rem;
+    }
+
+    .categoria {
+        flex:1;
+        max-width:400px;
+        padding: 20px;
+        background-color: #FFE4A7;
+        border-radius: 3%;
+        text-align: center;
+
+    }
+
+    .produto {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .preco {
+        font-size:28px;
+        font-weight:lighter;
+        margin-bottom: 10px;
+    }
+
+    .qualidades{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    .qualidades li {
+        margin-bottom: 20px;
+    }
+
+    .comprar {
+        padding: 10px;
+        background-color: #C38154;
+        color: aliceblue;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .rodape {
+        flex: 1;
+        background-color: #C38154;
+        text-align: center;
+        color: #525FE1;
+        flex-basis: 100px;
+        
+    }
+
+    @media (min-width:380px)and(max-widdth:1250px){
+        .container  {
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .navegacao{
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .rodape {
+            flex-direction: column;
+            height: 100%;
+        }
+
+    }
